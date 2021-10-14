@@ -1,0 +1,16 @@
+#+TITLE: od2ae --- Convert org-drill entries to anki-editor entries
+
+This package is for people who would like to convert their org-drill
+cards to anki-editor entries to allow exporting the cards to Anki.
+
+With this package, you can export a single card by running
+=od2ae-convert-entry-to-anki=, or export everything in your agenda by
+running =od2ae-convert-all-notes=.
+
+The scheduling information will be exported in a format that can be
+read by the Anki add-on
+https://github.com/telotortium/anki-import-scheduling-info-from-csv
+in order to transfer the scheduling info from your org-drill cards
+to the corresponding Anki cards. That data will be written to
+=od2ae-scheduling-info-buffer-name=, but you will need to save this buffer
+yourself.
